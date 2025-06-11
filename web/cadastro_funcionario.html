@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Funcionários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./src/imgs/Icon-tab.svg">
+        <link rel="stylesheet" href="./src/styles/style-cadastro-funci.css">
+    </head>
+    <body>
+        <main class="cadastro-container">        
+         <div class="cadastro-title-container">
+            <img src="./src/imgs/Logo-Senai-AutoPark.svg" alt="Logo - Senai AutoPark">
+            <h1>Cadastro de Funcionários</h1>
+        </div>
+
+        <form method="post" action="cadastro_funcionario.jsp">
+            <fieldset class="cadastro-form">
+                <div class="input-box">
+                    <img src="./src/imgs/icon-user.svg" alt="Name Icon">
+                    <input type="text" placeholder="Nome Completo" id="nome_func" name="nome_func" required>
+                </div>
+                <div class="input-box">
+                    <img src="./src/imgs/icon-user.svg" alt="User Icon">
+                    <input type="text" placeholder="Usuário" id="usuario" name="usuario" required>
+                </div>
+                <div class="input-box">
+                    <img src="./src/imgs/lock.svg" alt="Lock Icon">
+                    <input type="password" placeholder="Senha" id="senha" name="senha" required>
+                </div>
+                <div class="input-box">
+                    <img src="./src/imgs/mail.svg" alt="Email Icon">
+                    <input type="email" placeholder="E-mail" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <img src="./src/imgs/Briefcase.svg" alt="Briefcase Icon">
+                    <input type="text" placeholder="Cargo" id="cargo" name="cargo" required>
+                </div>
+            </fieldset>
+
+            <button class="btn-cadastro" type="submit">Cadastrar</button>
+        </form>
+        
+    </main>
+    </body>
+</html>
